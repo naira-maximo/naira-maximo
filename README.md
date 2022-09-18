@@ -19,7 +19,7 @@
     * [Prazos](#prazos)
     
 ##
-## Descrição do Projeto
+## *Descrição do Projeto*
 
 ### Integrantes da Equipe Khali
 * Jhonatan Oliveira Lopes [GitHub](https://github.com/JhonatanLop)
@@ -77,7 +77,7 @@
 * Retorno para os usuários das Sprint e usuários que ele deve avaliar
 
 ##
-## Desenvolvimento do Projeto
+## *Desenvolvimento do Projeto*
 
 ### Tecnologias Utilizadas
 * Linguagens: Python e HTML
