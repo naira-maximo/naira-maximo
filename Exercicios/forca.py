@@ -1,4 +1,6 @@
-import random  # Importar biblioteca que seleciona item aleatório da lista
+from codecs import BufferedIncrementalEncoder
+import random
+from ssl import VERIFY_DEFAULT  # Importar biblioteca que seleciona item aleatório da lista
 palavras = ['MELANCIA', 'MAÇÃ', 'BANANA', 'MELÃO', 'ABACAXI', 'MELÃO', 'MEXERICA']
 
 palavra = random.choice(palavras)  # Função para escolher item aleatório
@@ -13,7 +15,7 @@ letras_escolhidas = []
 
 estado_atual = ['_'] * len(palavra)  # Quantidade de caracteres da palavra. length, tamanho
 
-print('JOGO DA FORCA DAS FRUTAS')
+print('\033[1;33;45mJOGO DA FORCA DAS FRUTAS\033[m')
 print('TENTE ACERTAR A FRUTA SECRETA')
 print(f'VOCÊ PRECISA TENTAR UMA LETRA DE CADA VEZ. SE ERRAR, PERDE UMA CHANCE')
 print(f'VOCÊ TEM {chances} CHANCES PARA ACERTAR\n')
@@ -54,3 +56,30 @@ while tentativas <= chances and ''.join(estado_atual) != palavra:  # Condição 
         print(f"\n\nACABARAM SUAS TENTATIVAS. A FRUTA SECRETA É {palavra}")
     else:
         print("\n\nVOCÊ ACERTOU A FRUTA SECRETA")
+
+# CORES DE FONTE \033[  ;    ;    m
+# ESTILOS:
+# 0 sem estilo - none
+# 2 negrito - bold
+# 4 sublinhado - underline
+# 7 cores invertidas - negative
+
+# TEXTO:
+# 30 branco 
+# 31 vermelho
+# 32 verde 
+# 33 amarelo 
+# 34 azul 
+# 35 roxo 
+# 36 azul claro 
+# 37 cinza
+
+# BACKGROUND:
+# 40 branco 
+# 41 vermelho
+# 42 verde 
+# 43 amarelo 
+# 44 azul 
+# 45 roxo 
+# 46 azul claro 
+# 47 cinza

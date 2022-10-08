@@ -55,22 +55,22 @@ frm_tabela.columnconfigure(0, weight=1, minsize=100)
 frm_tabela.place(relx=0.02, rely=0.45, relwidth=0.96, relheight=0.5)
 
 # Widgets de entrada
-ent_lider=tk.Entry(master=frm_grupo, width=30, fg='#1a1d1a', font=('Calibre 13'))  # Nome Líder
+ent_lider=tk.Entry(master=frm_grupo, width=30, fg='#1a1d1a', font=('Calibre 10'))  # Nome Líder
 ent_lider.grid(row=0, column=1, padx=5)
 
-ent_lemail=tk.Entry(master=frm_grupo, width=30, fg='#1a1d1a', font=('Calibre 13'))  # E-mail Líder
+ent_lemail=tk.Entry(master=frm_grupo, width=30, fg='#1a1d1a', font=('Calibre 10'))  # E-mail Líder
 ent_lemail.grid(row=0, column=3, padx=5)
 
-ent_client=tk.Entry(master=frm_grupo, width=30, fg='#1a1d1a', font=('Calibre 13'))  # Nome Client
+ent_client=tk.Entry(master=frm_grupo, width=30, fg='#1a1d1a', font=('Calibre 10'))  # Nome Client
 ent_client.grid(row=1, column=1, padx=5)
 
-ent_cemail=tk.Entry(master=frm_grupo, width=30, fg='#1a1d1a', font=('Calibre 13'))  # E-mail Client
+ent_cemail=tk.Entry(master=frm_grupo, width=30, fg='#1a1d1a', font=('Calibre 10'))  # E-mail Client
 ent_cemail.grid(row=1, column=3, padx=5)
 
 # Função para widget de texto
 def widgetlabel(usuario, linha, coluna, text):
     usuario=tk.Label(master=frm_grupo, text=text,
-        fg='#1a1d1a', bg='#fae8e8', font=('Calibre', 15))
+        fg='#1a1d1a', bg='#fae8e8', font=('Calibre', 10))
     usuario.grid(row=linha, column=coluna, sticky='e')
 
 widgetlabel('lbl_lider', 0, 0, 'Nome do Líder do Grupo:')  # Widget de texto nome Líder do Grupo
@@ -80,7 +80,7 @@ widgetlabel('lbl_cemail', 1, 2, 'E-mail do Fake Client:')  # Widget de texto e-m
 
 def criarbotao(nome, texto, comando, linha):
     nome=tk.Button(master=frm_grupo, text=texto, 
-    fg='#1a1d1a', bg='#d9d9d9', font=('Calibre', 15),
+    fg='#1a1d1a', bg='#d9d9d9', font=('Calibre', 10),
     width=10, height=1, activebackground='#c5a8b0',
     command=comando)
     nome.grid(row=linha, column=4, padx=5, pady=5)
@@ -91,6 +91,11 @@ criarbotao('button_home', 'Home', 0, 1)
 tree=ttk.Treeview(master=frm_tabela, selectmode='browse',
     column=('codigogrupo', 'nomelider', 'emaillider', 'nomeclient', 'emailclient'),
     show="headings")
+
+scroll_tree = ttk.Scrollbar(frm_tabela, orient=tk.VERTICAL, command=tree.yview) # Comando xview para orientação HORIZONTAL
+scroll_tree.pack(side=tk.RIGHT, fill=tk.Y)
+tree.configure(yscrollcommand=scroll_tree.set) # xscrollcomand para barra horizontal
+tree.bind('<Configure>', lambda e: tree.configure(scrollregion=tree.bbox('all'))) # Seleciona qual parte do canvas o scrollbar deve identificar
 
 def criartabela(coluna, número, texto): 
     tree.column(coluna, width=200, minwidth=50, stretch=YES)

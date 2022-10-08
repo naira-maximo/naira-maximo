@@ -45,14 +45,6 @@ def get_entries(parent):
         if type(child) is Entry:
             lista.append(child)
 
-def get_child_by_name(parent, name):
-    for child in parent.winfo_children():
-        try:
-            if child.name is name
-
-except:
-            continue
-
     # função que pegar o valor da caixa de entrada do "n° de sprints, ao apertar o button.
     # essa função também "abre um frame" para que as linhas referentes ao cadastro da sprint sejam encaixadas
     def entry_sprint():
@@ -364,3 +356,30 @@ except:
     Button(janela, text="Confirmar Cadastros", font="Calibri, 14", command=confirmar_cadastros).grid(row=0, column=1, sticky='e')
 
     return janela
+
+
+frm_main=Frame(window, bg='#fae8e8')
+frm_main.pack(fill=BOTH, expand=1) 
+
+# O canvas aceita o scrollbar, mas ela só faz o papel da responsividade
+canvas=Canvas(frm_main, bg='#fae8e8')
+canvas.pack(side=LEFT, fill=BOTH, expand=1)
+
+# Configurações do scrollbar
+scrollbar_ver = ttk.Scrollbar(frm_main, orient=VERTICAL, command=canvas.yview) # Comando xview para orientação HORIZONTAL
+scrollbar_ver.pack(side=RIGHT, fill=Y)
+scrollbar_hor = ttk.Scrollbar(frm_main, orient=HORIZONTAL, command=canvas.xview) # Comando xview para orientação HORIZONTAL
+scrollbar_hor.pack(side=BOTTOM, fill=X)
+
+
+# Configurações do canvas
+canvas.configure(yscrollcommand=scrollbar_ver.set, xscrollcommand=scrollbar_hor.set) # xscrollcomand para barra horizontal
+canvas.bind('<Configure>', lambda e: canvas.configure(scrollregion=canvas.bbox('all'))) # Seleciona qual parte do canvas o scrollbar deve identificar
+
+frm_geral=Frame(canvas, bg='#fae8e8', relief=FLAT, bd=3) # Não colocamos o frame com o .pack nesse caso
+
+# Integração do frame geral a uma janela do canvas
+canvas.create_window((0,0), window=frm_geral, anchor='nw')
+
+frame_body = Frame(module_frame, bg=co0)
+frame_body.grid(row=1, column=0)
