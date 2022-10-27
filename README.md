@@ -1,4 +1,4 @@
-<img align="right" alt="Eu" height="220" width="220" src="https://user-images.githubusercontent.com/111442399/198363084-f638eebf-99c0-4fa6-87c4-44f73c9abcd0.gif">
+<img align="right" alt="Eu" height="200" width="200" src="https://user-images.githubusercontent.com/111442399/198363084-f638eebf-99c0-4fa6-87c4-44f73c9abcd0.gif">
 
 # Olá, me chamo Naira Maximo!
 ## ✨Bem-vinde ao meu perfil do GitHub✨
