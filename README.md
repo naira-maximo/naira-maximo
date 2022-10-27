@@ -1,4 +1,6 @@
-# Olá, me chamo Naira Maximo! 
+<img align="right" alt="Eu" height="200" width="200" src="https://user-images.githubusercontent.com/111442399/198360076-c157e608-12f8-4718-aaec-1e81e6a726c2.png">
+
+# Olá, me chamo Naira Maximo!
 ## ✨Bem-vinde ao meu perfil do GitHub✨
 - 💡 Cursando 1º Semestre em Banco de Dados na FATEC de São José dos Campos
 - 🧩 Formada em Pedagogia pela FHO|Uniararas
