@@ -11,4 +11,4 @@
 > - Exercícios de cursos extracurriculares *(Curso em Vídeo, Udemy, Alura, Dio, entre outros)*
 > - Testes e incrementos do Projeto Integrador [Khali](https://github.com/taniacruzz/Khali)
     
-### ⚠️ Alguns arquivos não estão completos. Os commits são feitos para dar andamento em outras máquinas ⚠️
+#### ⚠️ Alguns arquivos não estão completos. Os commits são feitos para dar andamento em outras máquinas ⚠️
