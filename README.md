@@ -1,3 +1,5 @@
+![header read me](https://user-images.githubusercontent.com/111442399/194775447-64b05579-9c51-4c6a-a70a-5db4355fb29b.png)
+![Animação](https://user-images.githubusercontent.com/111442399/194768082-fbdd655f-d7e9-440c-9c9a-f8e74f19c3c0.gif)
 # API 1º Semestre - Tecnologia em Banco de Dados 2022
 ##
 ## Sumário
@@ -32,6 +34,7 @@
 >  Desenvolvimento de uma solução computacional que viabilize a aplicação da técnica de **Avaliação 360°** e a análise dos dados obtidos pelos alunos e instrutores da instituição de ensino PBLTeX, especializada em cursos e práticas de ensino aplicando PBL (*Problem Based Learning*)
 
 ### Objetivo
+
 > Atender à necessidade da instituição fictícia e desenvolver uma solução computacional que exercite a capacidade de pesquisa e autodidaxia dos integrantes dos grupos, no que tange:
 > * A aplicação de técnicas de programação para a construção de algoritmos
 > * O uso de uma ferramenta que possibilite um Ambiente de Desenvolvimento Integrado (IDE) para o desenvolvimento da solução computacional
