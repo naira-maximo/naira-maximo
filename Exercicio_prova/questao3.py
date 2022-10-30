@@ -18,8 +18,8 @@ while a1 <= b:
     taxa_b = (b * 5)/100  # Taxa de crescimento anual do país B
     a1 += taxa_a  # Acréscimo da taxa na variável da população a cada ano contabilizado
     b += taxa_b
-    anos1 += 1
-print(f'A população A igualará ou ultrapassará a população B em {anos1} anos, tendo {a1} habitantes a população A e {b} a população B')
+    anos1 += 1  # Contador de anos
+print(f'A população A igualará ou ultrapassará a população B em {anos1} anos, tendo {a1:.0f} habitantes a população A e {b:.0f} a população B')
 
 # Calcular o crescimento anual da população dos países A e C
 while a2 < c*1.23:
@@ -27,6 +27,6 @@ while a2 < c*1.23:
     taxa_c = (c * 2.5)/100  # Taxa de crescimento anual do país C
     a2 += taxa_a  # Acréscimo da taxa na variável da população a cada ano contabilizado
     c += taxa_c
-    anos2 += 1
-print(f'A população A ultrapassará a população C em 23% em {anos2} anos, tendo {a2} habitantes a população A e {c} a população C')
+    anos2 += 1  # Contador de anos
+print(f'A população A ultrapassará a população C em 23% em {anos2} anos, tendo {a2:.0f} habitantes a população A e {c:.0f} a população C')
 

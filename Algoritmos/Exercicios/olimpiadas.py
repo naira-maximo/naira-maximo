@@ -1,0 +1,2 @@
+# Construa um algoritmo que seja capaz de dar a classificação olímpica de 3 países informados. Para cada país é informado o nome,
+# a quantidade de medalhas de ouro, prata e bronze. Considere que cada medalha de ouro tem peso 3, cada prata tem peso 2 e cada bronze, peso 1.
