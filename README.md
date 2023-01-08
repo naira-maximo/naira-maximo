@@ -15,4 +15,4 @@
     
 #### ⚠️ Alguns arquivos não estão completos. Os commits são feitos para dar andamento em outras máquinas ⚠️
 
-![Snake animation](https://github.com/naira-maximo/naira-maximo/blob/output/github-contribution-grid-snake.svg)
+![snake gif](https://github.com/naira-maximo/naira-maximo/blob/output/github-contribution-grid-snake.svg)
