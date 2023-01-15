@@ -1,0 +1,1 @@
+# Elabore um algoritmo que leia uma série de 50 notas e calcule quantas são 10% acima da média e quantas são 10% abaixo.
