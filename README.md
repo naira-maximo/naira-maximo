@@ -6,7 +6,7 @@
 - 🧩 Formada em Pedagogia pela FHO|Uniararas
 - 🌱 Aprendendo Python como 1ª linguagem de programação
 
-![Naira's GitHub stats](https://github-readme-stats.vercel.app/api?username=naira-maximo&show_icons=true&theme=radical)
+![Naira's GitHub stats](https://github-readme-stats.vercel.app/api?username=naira-maximo&show_icons=true&theme=radical&bg_color=00000000)
 
 ## Este Repositório é destinado à compilação de exercícios e práticas acadêmicas e pessoais, envolvendo:
 > - Exercícios de Algoritmos
