@@ -1,0 +1,172 @@
+/* Para abrir uma aba do navegador e ver como está a página, usamos Alt + L + O */
+body {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+main::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    min-height: 100vh;
+    width: 80vw;
+
+    background: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
+}
+
+main .personagem {
+    display: none;
+    height: 100vh;
+}
+
+main .personagem.selecionado {
+    display: block;
+}
+
+main .personagem .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 380px;
+    z-index: 1;
+}
+
+.conteudo .nome-personagem {
+    color: #ffffff;
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.conteudo .descricao {
+    color: #ffffff;
+    font-family: "Rubik";
+    line-height: 24px;
+    text-align: justify;
+    /*justify-content: center;*/
+}
+
+.conteudo .logo {
+    background-image: url("../imagens/one-piece-logo.png");
+    background-size: cover;
+    height: 100px;
+    width: 230px;
+    margin-bottom: 35px;
+}
+
+.botoes {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.botoes .botao {
+    border: none;
+    background: #000000;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.botoes .botao img {
+    border-radius: 50%;  
+}
+
+.botoes .botao.selecionado {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #D9D9D9;
+
+}
+
+/*Seletor de ID: para usar a ID no HTML, usamos o # no arquivo CSS
+
+#header{
+	color: red;
+}
+
+Seletor de classe: mais utilizado no CCS, utilizamos o .
+.container{
+	border: 1px solid black;
+}
+
+Seletor de tag: todas as tags recebem a mesma formatação
+p{
+	font-size: 30px;
+}
+
+Seletor de pseudo elemento: ele cria um elemento que não existe no HTML, direto no CCS
+
+div:after{
+	content: "este é um pseudo elemento";
+	background-color: red;
+}
+
+Seletor de descendência: especifica qual elemento você quer, dentro de outro elemento.
+
+div span{
+	color: blueviolet;
+}
+
+Seletor de filhos: seleciona uma tag que está dentro de outro elemento.
+
+h2 > p{
+	color: red;
+}
+
+Seletor de irmãos: pega um elemento que tem um irmão direto. No exemplo abaixo, pega uma tag p que tem como irmão (um elemento ao lado, anterior) um h2.
+
+h2 + p{
+	color: chartreuse;
+}
+
+Seletor de vários irmãos: seleciona todos os elementos que venham depois de um irmão
+
+h2 ~ p{
+	color: aqua;
+}
+
+Seletor de estado:no exemplo, quando passar o mouse sobre um "a", ou seja, um link, ele ficará na configuração que definir. Ele ficará vermelho quando passar o mouse e amarelo quando clicar.
+
+a: hover{
+	color: red;
+}
+
+a: active{
+	color: yellow;
+}
+
+Seletor de atributo: quando você da um atributo para um item HTML, você pode editá-lo.
+
+HTML:
+<p data-title="batata">Este é um parágrafo solto.</p>
+
+CSS:
+p[data-title="batata"]{
+	background-color: brown;
+}
+
+Seletor geral: seleciona todos os itens
+
+*{
+	margin: 0;
+}
