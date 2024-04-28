@@ -5,7 +5,8 @@
 *✨Bem-vinde ao meu perfil do GitHub✨*
 - 💡 Cursando o 2º Semestre em Banco de Dados na FATEC de São José dos Campos
 - 🧩 Formada em Pedagogia pela FHO|Uniararas e Técnica em Meio Ambiente pelo Colégio Tableau de Caçapava
-- 🌱 Aprendendo Python como 1ª linguagem de programação
+- 👩🏻‍💻 Supplier/Customer Service Specialist na CRS Laboratories
+- 🌱 Aprendendo Java
 
 ![Naira's GitHub stats](https://github-readme-stats.vercel.app/api?username=naira-maximo&show_icons=true&theme=radical)
 
