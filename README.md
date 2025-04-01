@@ -3,7 +3,7 @@
 **Olá, me chamo Naira Maximo!**
 
 *✨Bem-vinde ao meu perfil do GitHub✨*
-- 💡 Cursando o 2º Semestre em Banco de Dados na FATEC de São José dos Campos
+- 💡 Cursando o 4º Semestre em Banco de Dados na FATEC de São José dos Campos
 - 🧩 Formada em Pedagogia pela FHO|Uniararas e Técnica em Meio Ambiente pelo Colégio Tableau de Caçapava
 - 👩🏻‍💻 Supplier/Customer Service Specialist na CRS Laboratories
 - 🌱 Aprendendo Java
